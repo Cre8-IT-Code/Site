@@ -5,22 +5,22 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, and mobile apps. Empower your business with innovative technology.">
-  <meta name="keywords" content="IT solutions, SaaS, AI, automation, MCP server, mobile applications, business technology, Cre8-it">
+  <meta name="description" content="Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, mobile apps, and impactful projects like GroomSome and Hoofdpijndossier. Empower your business with innovative technology.">
+  <meta name="keywords" content="IT solutions, SaaS, AI, automation, MCP server, mobile applications, business technology, Cre8-it, GroomSome, Hoofdpijndossier, charity platform, pet grooming software">
   <meta name="author" content="Cre8-it">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://cre8-it.nl/">
   <link rel="icon" href="/logo.png" type="image/png">
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Cre8-it | IT solutions for your business">
-  <meta property="og:description" content="Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, and mobile apps. Empower your business with innovative technology.">
+  <meta property="og:description" content="Cre8-it delivers tailored IT solutions and showcases projects like GroomSome (pet grooming SaaS) and Hoofdpijndossier (charity platform). Empower your business with innovative technology.">
   <meta property="og:image" content="https://cre8-it.nl/logo.png">
   <meta property="og:url" content="https://cre8-it.nl/">
   <meta property="og:type" content="website">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cre8-it | IT solutions for your business">
-  <meta name="twitter:description" content="Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, and mobile apps. Empower your business with innovative technology.">
+  <meta name="twitter:description" content="Cre8-it delivers tailored IT solutions and showcases projects like GroomSome (pet grooming SaaS) and Hoofdpijndossier (charity platform). Empower your business with innovative technology.">
   <meta name="twitter:image" content="https://cre8-it.nl/logo.png">
   <title>Cre8-it | IT solutions for your business</title>
   <link
@@ -35,8 +35,22 @@
     "name": "Cre8-it",
     "url": "https://cre8-it.nl/",
     "logo": "https://cre8-it.nl/logo.png",
-    "description": "Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, and mobile apps. Empower your business with innovative technology.",
-    "email": "info@cre8-it.nl"
+    "description": "Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, mobile apps, and impactful projects like GroomSome and Hoofdpijndossier.",
+    "email": "info@cre8-it.nl",
+    "hasPart": [
+      {
+        "@type": "Product",
+        "name": "GroomSome",
+        "url": "https://groomsome.app",
+        "description": "A modern SaaS platform for pet grooming businesses."
+      },
+      {
+        "@type": "Project",
+        "name": "Hoofdpijndossier",
+        "url": "https://www.hoofdpijn-dossier.nl",
+        "description": "A charity platform supporting children with chronic headaches and rare conditions, raising over €100,000 for medical research and support."
+      }
+    ]
   }
   </script>
   <script src="/newrelic.js"></script>
@@ -90,15 +104,65 @@
       </div>
     </div>
 
+    <!-- Projects Section -->
+    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <h2 class="text-3xl font-bold text-[#0f3541] mb-12 text-center">Highlighted Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- GroomSome Project -->
+        <div class="bg-[#f3fbfc] rounded-2xl p-8 shadow-lg flex flex-col justify-between">
+          <div class="flex items-center gap-6 mb-6">
+            <img src="groomsome.svg" alt="GroomSome logo" class="w-20 h-20 rounded-xl bg-white object-contain" />
+            <h3 class="text-2xl font-semibold text-[#0f3541]">GroomSome</h3>
+          </div>
+          <p class="text-[#0f3541] mb-4">GroomSome is a modern SaaS platform designed for pet grooming businesses. It streamlines appointment scheduling, client management, and business operations, helping groomers save time and deliver a better customer experience.</p>
+          <a href="https://groomsome.app" target="_blank" rel="noopener" class="mt-4 inline-block text-[#12d5db] font-semibold hover:underline">Visit GroomSome &rarr;</a>
+        </div>
+        <!-- Hoofdpijndossier Project -->
+        <div class="bg-[#f3fbfc] rounded-2xl p-8 shadow-lg flex flex-col justify-between">
+          <div class="flex items-center gap-6 mb-6">
+            <img src="hoofdpijndossier.jpg" alt="Hoofdpijndossier logo" class="w-20 h-20 rounded-xl bg-white object-contain" />
+            <h3 class="text-2xl font-semibold text-[#0f3541]">Hoofdpijndossier</h3>
+          </div>
+          <p class="text-[#0f3541] mb-4">Hoofdpijndossier is a charity platform founded to help children with chronic headaches and rare conditions. The platform raised over €100,000 to help a child in need receive life-changing surgery abroad. A great achievement in digital health and social impact.</p>
+          <a href="https://www.hoofdpijn-dossier.nl" target="_blank" rel="noopener" class="mt-4 inline-block text-[#12d5db] font-semibold hover:underline">Visit Hoofdpijndossier &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="mx-auto max-w-4xl px-6 py-20 lg:px-8">
+      <h2 class="text-3xl font-bold text-[#0f3541] mb-8 text-center">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="profile.jpeg" alt="Mark Foppen profile photo" class="w-40 h-40 rounded-full object-cover shadow-md mb-6 md:mb-0" />
+        <div>
+          <p class="text-[#0f3541] text-lg mb-4">
+            Hi, I’m Mark Foppen. I’m a freelance full stack developer and Azure Solutions Architect who enjoys building things that work well—and make sense. Over the years, I’ve worked with larger companies and launched a startup, to turn ideas into working software: SaaS platforms, cloud-native systems, and recently, AI-powered apps.
+          </p>
+          <p class="text-[#0f3541] text-lg mb-4">
+            I’m certified in a bunch of Microsoft and Github certifications (including Azure Solutions Architect), and I’ve always had a soft spot for building secure, scalable systems without overengineering everything. My approach is practical, I focus on shipping, keeping costs under control, and avoiding tech debt wherever possible.
+          </p>
+          <p class="text-[#0f3541] text-lg mb-4">
+            Beyond client work, I write about tech, cloud architecture, and development on my blog. It’s partly to keep my thoughts organized and partly to share things I’ve learned the hard way.
+          </p>
+          <p class="text-[#0f3541] text-lg font-semibold mt-6">
+            If you’re working on something interesting—or need a hand making your idea production-ready—I’d love to chat. Just <a href="mailto:info@cre8-it.nl" class="text-[#12d5db] underline hover:no-underline">shoot me a message</a> or <a href="https://www.linkedin.com/in/markfoppen" target="_blank" rel="noopener" class="text-[#12d5db] underline hover:no-underline">connect with me online</a>.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="mx-auto mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
-      <div class="flex justify-center gap-x-6">
-        <a href="https://www.re-markable.net" target="_blank" rel="noopener" class="flex items-center text-xs text-gray-500 hover:text-indigo-600">
-          <i class="fas fa-blog mr-1"></i>Blog
+    <footer class="mx-auto mt-20 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-32 sm:pb-24 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-center gap-8 mt-10">
+        <a href="https://www.re-markable.net" target="_blank" rel="noopener" class="flex flex-col items-center bg-[#f3fbfc] rounded-2xl p-8 shadow-lg w-full md:w-1/3 hover:bg-[#e0f7fa] transition">
+          <i class="fas fa-blog text-3xl text-[#12d5db] mb-4"></i>
+          <span class="text-lg font-semibold text-[#0f3541] mb-2">Blog</span>
+          <span class="text-sm text-[#0f3541]">Read insights, stories, and updates on technology and business.</span>
         </a>
-        <a href="https://www.linkedin.com/in/markfoppen" target="_blank" rel="noopener" class="flex items-center text-xs text-gray-500 hover:text-indigo-600">
-          <i class="fab fa-linkedin mr-1"></i>LinkedIn
+        <a href="https://www.linkedin.com/in/markfoppen" target="_blank" rel="noopener" class="flex flex-col items-center bg-[#f3fbfc] rounded-2xl p-8 shadow-lg w-full md:w-1/3 hover:bg-[#e0f7fa] transition">
+          <i class="fab fa-linkedin text-3xl text-[#12d5db] mb-4"></i>
+          <span class="text-lg font-semibold text-[#0f3541] mb-2">LinkedIn</span>
+          <span class="text-sm text-[#0f3541]">Connect with me for professional updates and networking.</span>
         </a>
       </div>
       <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2025 Cre8-it, All rights reserved.</p>
