@@ -9,7 +9,7 @@ const options = {
   env: "production",
   version: "0.0.1",
   organizationIdentifier: "30yQ5j22vDROWRcAIJHN98YvXjr",
-  insecureHTTP: true,
+  insecureHTTP: false,
   apiVersion: "v1",
 };
 
