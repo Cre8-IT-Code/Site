@@ -8,9 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: "./insights/rum.js",
       output: {
-        entryFileNames: "openobserve.bundle.js",
+        entryFileNames: "insights.bundle.js",
         format: "iife", // Important: so everything is exposed on `window`
-        name: "OpenObserveBundle",
+        name: "InsightsBundle",
       },
     },
   },

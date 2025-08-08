@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "@openobserve/browser-logs": "^0.2.11",
-    "@openobserve/browser-rum": "^0.2.11",
+    "@sentry/browser": "^10.2.0",
     "vite": "^7.1.0"
   },
   "name": "site",

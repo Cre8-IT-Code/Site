@@ -1,44 +1,24 @@
-import { openobserveRum } from "@openobserve/browser-rum";
-import { openobserveLogs } from "@openobserve/browser-logs";
+import * as Sentry from "@sentry/browser";
 
-const options = {
-  clientToken: "rum638OGCcd6JLIj3Uf",
-  applicationId: "cre8-it",
-  site: "observability.cre8-it.nl",
-  service: "cre8-it-site",
-  env: "production",
-  version: "0.0.1",
-  organizationIdentifier: "30yQ5j22vDROWRcAIJHN98YvXjr",
-  insecureHTTP: false,
-  apiVersion: "v1",
-};
+Sentry.init({
+  dsn: "https://111b5e2bf66898def1d1b1b2f3ce9397@o4509807637495808.ingest.de.sentry.io/4509807640117328",
+  // Setting this option to true will send default PII data to Sentry.
+  // For example, automatic IP address collection on events
+  sendDefaultPii: true,
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.replayIntegration(),
+  ],
+  // Tracing
+  tracesSampleRate: 1.0, //  Capture 100% of the transactions
+  // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
+  tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
+  // Session Replay
+  replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+  replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 
-openobserveRum.init({
-  applicationId: options.applicationId, // required, any string identifying your application
-  clientToken: options.clientToken,
-  site: options.site,
-  organizationIdentifier: options.organizationIdentifier,
-  service: options.service,
-  env: options.env,
-  version: options.version,
-  trackResources: true,
-  trackLongTasks: true,
-  trackUserInteractions: true,
-  apiVersion: options.apiVersion,
-  insecureHTTP: options.insecureHTTP,
-  defaultPrivacyLevel: "allow", // 'allow' or 'mask-user-input' or 'mask'. Use one of the 3 values.
+  environment: "production", // Set the environment to production
+  release: "1.0.0", // Set the release version of your application
 });
 
-openobserveLogs.init({
-  clientToken: options.clientToken,
-  site: options.site,
-  organizationIdentifier: options.organizationIdentifier,
-  service: options.service,
-  env: options.env,
-  version: options.version,
-  forwardErrorsToLogs: true,
-  insecureHTTP: options.insecureHTTP,
-  apiVersion: options.apiVersion,
-});
-
-openobserveRum.startSessionReplayRecording();
+window.Sentry = Sentry;
