@@ -61,16 +61,15 @@
     var text = document.createElement("p");
     text.style.margin = "0 0 0.9rem 0";
     var beforeLink = t(
-      "We use Microsoft Clarity to understand how visitors use this site. No tracking cookies are set until you accept. See ",
-      "We gebruiken Microsoft Clarity om te begrijpen hoe bezoekers deze site gebruiken. Er worden geen tracking cookies geplaatst totdat je akkoord gaat. Zie "
+      "We use analytics cookies to understand how visitors use this site and to improve it. No non-essential cookies are set until you accept. See our ",
+      "We gebruiken analytische cookies om te begrijpen hoe bezoekers deze site gebruiken en om de site te verbeteren. Er worden geen niet-essentiële cookies geplaatst totdat je akkoord gaat. Zie ons "
     );
-    var linkText = t("Clarity's cookie list", "Clarity's cookie-overzicht");
+    var linkText = t("Privacy policy", "Privacybeleid");
     var afterLink = t(" for details.", " voor details.");
 
     text.appendChild(document.createTextNode(beforeLink));
     var link = document.createElement("a");
-    link.href = "https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list";
-    link.target = "_blank";
+    link.href = "/privacy";
     link.rel = "noopener";
     link.textContent = linkText;
     link.style.cssText = "color:#12d5db;text-decoration:underline;";
