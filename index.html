@@ -1,202 +1,459 @@
-<!DOCTYPE html>
-<html lang="en" style="height: 100%;">
-
+<!doctype html>
+<html lang="en">
 <head>
-
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, mobile apps, and impactful projects like GroomSome and Hoofdpijndossier. Empower your business with innovative technology. Freelance .NET developer, freelance software developer, senior .NET developer, Azure specialist, cloud architect, C# expert, backend developer, full stack developer, Microsoft certified, SaaS consultant.">
-  <meta name="keywords" content="IT solutions, SaaS, AI, automation, MCP server, mobile applications, business technology, Cre8-it, GroomSome, Hoofdpijndossier, charity platform, pet grooming software, freelance .NET developer, freelance software developer, senior .NET developer, Azure specialist, cloud architect, C# developer, backend developer, full stack developer, Microsoft certified, SaaS consultant, software engineer, remote developer, freelance programmer">
-  <meta name="author" content="Cre8-it">
+  <title>Cre8-it | Start with where you want to be</title>
+  <meta name="description" content="Cre8-it is a Dutch software company. We make GroomSome, Runbound, Stickio and Tapinto, and help businesses of every size get where they want to be, from the right software to AI that earns its place.">
+  <meta name="author" content="Cre8-it B.V.">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f6f8f8">
   <link rel="canonical" href="https://cre8-it.nl/">
-  <link rel="icon" href="/logo.png" type="image/png">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Cre8-it | IT solutions for your business">
-  <meta property="og:description" content="Cre8-it delivers tailored IT solutions and showcases projects like GroomSome (pet grooming SaaS) and Hoofdpijndossier (charity platform). Empower your business with innovative technology.">
-  <meta property="og:image" content="https://cre8-it.nl/logo.png">
-  <meta property="og:url" content="https://cre8-it.nl/">
+  <link rel="alternate" hreflang="en" href="https://cre8-it.nl/">
+  <link rel="alternate" hreflang="nl" href="https://cre8-it.nl/index-nl.html">
+  <link rel="alternate" hreflang="x-default" href="https://cre8-it.nl/">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+  <meta property="og:site_name" content="Cre8-it">
   <meta property="og:type" content="website">
-  <!-- Twitter -->
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:title" content="Cre8-it: start with where you want to be">
+  <meta property="og:description" content="Cre8-it is a Dutch software company. We make GroomSome, Runbound, Stickio and Tapinto, and help businesses of every size get where they want to be, from the right software to AI that earns its place.">
+  <meta property="og:url" content="https://cre8-it.nl/">
+  <meta property="og:image" content="https://cre8-it.nl/assets/img/og-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cre8-it. Start with where you want to be. We'll build the way there.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cre8-it | IT solutions for your business">
-  <meta name="twitter:description" content="Cre8-it delivers tailored IT solutions and showcases projects like GroomSome (pet grooming SaaS) and Hoofdpijndossier (charity platform). Empower your business with innovative technology.">
-  <meta name="twitter:image" content="https://cre8-it.nl/logo.png">
-  <title>Cre8-it | IT solutions for your business</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="twitter:title" content="Cre8-it: start with where you want to be">
+  <meta name="twitter:description" content="Cre8-it is a Dutch software company. We make GroomSome, Runbound, Stickio and Tapinto, and help businesses of every size get where they want to be, from the right software to AI that earns its place.">
+  <meta name="twitter:image" content="https://cre8-it.nl/assets/img/og-en.png">
+
+  <link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/site.css">
+
+  <!-- Sends Dutch-language visitors to the Dutch page and remembers a manual choice. -->
+  <script src="/languageSelector.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://cre8-it.nl/#organization",
     "name": "Cre8-it",
+    "legalName": "Cre8-it B.V.",
     "url": "https://cre8-it.nl/",
     "logo": "https://cre8-it.nl/logo.png",
-    "description": "Cre8-it delivers tailored IT solutions: SaaS, AI integrations, MCP servers, automation, mobile apps, and impactful projects like GroomSome and Hoofdpijndossier.",
+    "description": "Cre8-it is a Dutch software company. We make GroomSome, Runbound, Stickio and Tapinto, and help businesses of every size get where they want to be, from the right software to AI that earns its place.",
     "email": "info@cre8-it.nl",
-    "hasPart": [
+    "vatID": "NL869923651B01",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "KvK",
+      "value": "42147119"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Baron van Nagellstraat 136",
+      "postalCode": "3771 LL",
+      "addressLocality": "Barneveld",
+      "addressCountry": "NL"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Mark Foppen",
+      "sameAs": "https://www.linkedin.com/in/markfoppen"
+    },
+    "brand": [
       {
-        "@type": "Product",
+        "@type": "Brand",
         "name": "GroomSome",
-        "url": "https://groomsome.app",
-        "description": "A modern SaaS platform for pet grooming businesses."
+        "url": "https://groomsome.app"
       },
       {
-        "@type": "Project",
-        "name": "Hoofdpijndossier",
-        "url": "https://www.hoofdpijn-dossier.nl",
-        "description": "A charity platform supporting children with chronic headaches and rare conditions, raising over €100,000 for medical research and support."
+        "@type": "Brand",
+        "name": "Runbound",
+        "url": "https://runbound.app"
       },
       {
-        "@type": "Product",
-        "name": "tapinto.dev",
-        "url": "https://tapinto.dev",
-        "description": "Tapinto opens a public HTTPS URL onto a local MCP server or API in one command. MCP-aware inspector, per-minute USD billing, and the first 60 minutes every week are free."
+        "@type": "Brand",
+        "name": "Stickio",
+        "url": "https://stickio.cre8-it.nl"
+      },
+      {
+        "@type": "Brand",
+        "name": "Tapinto",
+        "url": "https://tapinto.dev"
       }
     ]
   }
   </script>
+  <!-- Analytics load only after consent (see cookieBanner.js). -->
   <script src="/clarity.js"></script>
   <script src="/posthog.js"></script>
   <script src="/cookieBanner.js" defer></script>
-  <link rel="alternate" hreflang="en" href="https://cre8-it.nl/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://cre8-it.nl/index-nl.html" />
-  <link rel="alternate" hreflang="x-default" href="https://cre8-it.nl/index.html" />
 </head>
 
-<body style="height: 100%;">
-  <div class="bg-white">
-    <div class="bg-white">
-      <header class="absolute inset-x-0 top-0 z-50">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Cre8-it</span>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header wrap">
+    <a class="brand" href="/">
+      <img src="/assets/img/logo-mark.webp" alt="" width="40" height="40">
+      <span>Cre8-it</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <span class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#ai">AI</a>
+        <a href="#approach">How we work</a>
+        <a href="/about/">About</a>
+        <a href="https://www.re-mark-able.net">Blog</a>
+      </span>
+      <span class="lang" role="group" aria-label="Language">
+        <a href="/" hreflang="en" lang="en" data-lang="en" aria-label="English" aria-current="true">EN</a>
+        <a href="/index-nl.html" hreflang="nl" lang="nl" data-lang="nl" aria-label="Nederlands">NL</a>
+      </span>
+      <a class="nav-cta" href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="wrap hero">
+      <h1 class="h-hero">Start with where you want to be. <span>We'll build the way there.</span></h1>
+      <div class="hero-row">
+        <div class="hero-copy">
+          <p class="lead">Cre8-it is a Dutch software company. We make products that give people time back and peace of mind. And we help businesses of every size do the same, from the right software to AI that actually earns its place.</p>
+          <div class="btn-row">
+            <a class="btn btn--solid" href="#contact">
+              Tell us your goal
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg>
             </a>
+            <a class="btn btn--outline" href="#products">See what we make</a>
           </div>
-          <div class="flex gap-x-6 items-center">
-            <a href="https://www.re-mark-able.net" target="_blank" rel="noopener" class="flex items-center text-sm font-semibold text-gray-700 hover:text-indigo-600">
-              <i class="fas fa-blog mr-2"></i>Blog
-            </a>
-            <a href="https://www.linkedin.com/in/markfoppen" target="_blank" rel="noopener" class="flex items-center text-sm font-semibold text-gray-700 hover:text-indigo-600">
-              <i class="fab fa-linkedin mr-2"></i>LinkedIn
-            </a>
-            <select id="lang-switcher" class="ml-4 border rounded px-2 py-1 text-sm pr-8 appearance-none bg-white bg-[url('data:image/svg+xml;utf8,<svg fill=\'none\' stroke=\'%230f3541\' stroke-width=\'2\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M19 9l-7 7-7-7\'></path></svg>')] bg-no-repeat bg-right bg-[length:1.5em_1.5em]">
-              <option value="en" data-flag="🇬🇧" selected>🇬🇧 English</option>
-              <option value="nl" data-flag="🇳🇱">🇳🇱 Nederlands</option>
-            </select>
-          </div>
-        </nav>
-      </header>
-      <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
-        <div
-          class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
-          aria-hidden="true"></div>
-        <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-          <main>
-          <div
-            class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-              Creating IT solutions</h1>
-            <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-              <p class="text-lg leading-8 text-gray-600">Cre8-it helps businesses create value through technology. I deliver tailored SaaS (Software as a Service) solutions, advanced AI integrations, Model Context Protocol (MCP) servers, automation, and mobile applications. My focus is on empowering organizations to turn ideas into impactful digital products—combining technical expertise, usability, and seamless functionality to drive your business forward.</p>
-              <div class="mt-10 flex items-center gap-x-6">
-                <a href="mailto:info@cre8-it.nl"
-                  class="inline-flex items-center rounded-full bg-[#12d5db] px-5 py-3 text-base font-semibold text-white shadow-md hover:bg-[#0f3541] transition">
-                  <i class="fas fa-paper-plane mr-2"></i> Get in Touch
-                </a>
-              </div>
-            </div>
-            <img src="logo.png" alt="Cre8-it company logo - IT solutions provider" 
-              class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-contain sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
-          </div>
-          </main>
         </div>
-        <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+        <a class="founder-chip" href="/about/">
+          <img src="/profile.jpeg" alt="" width="52" height="52">
+          <span class="txt">
+            <span class="sm">Founded by</span>
+            <span class="nm">Mark Foppen</span>
+            <span class="sm">Read the story</span>
+          </span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products-intro">
+      <div>
+        <h2 class="h-intro">Every product starts with someone's day.</h2>
+        <p class="lead">A groomer who wants to remember every animal. A runner who just wants to run. A parent keeping school, sport and work together. A developer who wants to share what they made. We build what makes those days easier.</p>
+      </div>
+    </section>
+
+    <section id="groomsome" class="product product--groomsome" aria-labelledby="gs-title">
+      <div class="wrap">
+        <p class="product-name">
+          <img src="/groomsome.svg" alt="" width="32" height="32" loading="lazy">
+          GroomSome
+        </p>
+        <h2 id="gs-title" class="h-product">Every animal, remembered.</h2>
+        <p class="product-lead">Milo is happy and wriggly, needs a second pair of hands for his nails, and wears his teddy-bear trim at 12 mm. GroomSome keeps everything a groomer knows about every animal on one page, so each visit picks up where the last one ended. Owners notice. So do the animals.</p>
+        <a class="product-link" href="https://groomsome.app">Visit groomsome.app<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a>
+        <figure class="browser">
+          <div class="browser-bar" aria-hidden="true">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="url">groomsome.app</span>
+          </div>
+          <img src="/assets/img/groomsome-milo-en.webp" alt="Milo's page in GroomSome: behaviour notes, trim instructions, owner details and a timeline of every visit" width="2880" height="1800" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section id="runbound" class="product product--runbound on-dark" aria-labelledby="rb-title">
+      <div class="wrap">
+        <p class="product-name">
+          <img src="/assets/img/runbound-icon.webp" alt="" width="32" height="32" loading="lazy">
+          Runbound
+        </p>
+        <h2 id="rb-title" class="h-product">Just run. <span>We'll bring you home.</span></h2>
+        <p class="product-lead">No planning a route, no checking a map. Pick today's run, follow what your watch tells you, and finish right where you started. Even in a city you've never run in before.</p>
+        <a class="product-link" href="https://runbound.app">Visit runbound.app<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a>
+        <ol class="steps">
+          <li class="step--phone">
+            <div class="device device--phone">
+              <img src="/assets/img/runbound-routes-phone.webp" alt="Runbound on iPhone: a real route through central Amsterdam that ends where it starts" width="720" height="1564" loading="lazy" decoding="async">
+            </div>
+            <p><span>Pick a route</span>from your door, or your hotel.</p>
+          </li>
+          <li>
+            <div class="device device--watch">
+              <img src="/assets/img/runbound-watch-route.webp" alt="Apple Watch: today's 3.5 km route on the map, starts and ends here" width="422" height="514" loading="lazy" decoding="async">
+            </div>
+            <p><span>It starts and ends</span>right where you are.</p>
+          </li>
+          <li>
+            <div class="device device--watch">
+              <img src="/assets/img/runbound-watch-turn.webp" alt="Apple Watch: turn left in 27 metres onto Prinsengracht" width="422" height="514" loading="lazy" decoding="async">
+            </div>
+            <p><span>Your wrist says</span>where to turn.</p>
+          </li>
+          <li>
+            <div class="device device--watch">
+              <img src="/assets/img/runbound-watch-done.webp" alt="Apple Watch: You did it! Run finished back at the start" width="422" height="514" loading="lazy" decoding="async">
+            </div>
+            <p><span>And you're home.</span>No map needed.</p>
+          </li>
+        </ol>
+        <p class="product-note">And a plan that listens to your body, so going from the couch to 30 minutes of running feels possible instead of punishing.</p>
+      </div>
+    </section>
+
+    <section id="stickio" class="product product--stickio" aria-labelledby="st-title">
+      <div class="wrap">
+        <p class="product-name">
+          <img src="/assets/img/stickio-icon.webp" alt="" width="32" height="32" loading="lazy">
+          Stickio
+        </p>
+        <h2 id="st-title" class="h-product">The whole family's week. <span>On one page.</span></h2>
+        <p class="product-lead">School messages from Parro and Magister. Football from Voetbal.nl. Work, birthdays, and the day the bins go out. Stickio brings it together on one calm page that reads like the planner on your kitchen table.</p>
+        <a class="product-link" href="https://stickio.cre8-it.nl">Visit stickio.cre8-it.nl<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a>
+        <figure class="tablet">
+          <img src="/assets/img/stickio-week-ipad.webp" alt="Stickio on iPad: a week spread with appointments and colourful sticky notes" width="1400" height="964" loading="lazy" decoding="async">
+        </figure>
+        <div class="tiles">
+          <div>
+            <h3>The little things, right where you'll see them.</h3>
+            <p>Sticky notes for everything that isn't an appointment. Didn't get to it today? It quietly moves to tomorrow.</p>
+          </div>
+          <div>
+            <h3>Hands full? Just say it.</h3>
+            <p>Ask Siri for a new sticky note. Or let Claude or ChatGPT on your Mac put it on your week for you.</p>
+          </div>
+          <div>
+            <h3>Connected to the apps you already have.</h3>
+            <p>Parro, Magister, Somtoday, Social Schools, Voetbal.nl, Google, Outlook, iCloud and many more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tapinto" class="product product--tapinto on-dark" aria-labelledby="tp-title">
+      <div class="wrap">
+        <p class="product-name">
+          <img src="/tapinto-logo.png" alt="" width="32" height="32" loading="lazy">
+          Tapinto
+        </p>
+        <h2 id="tp-title" class="h-product">Just ask your AI <span>to share it.</span></h2>
+        <p class="product-lead">You built something on your laptop and want a colleague, a client or another AI to try it. Ask Claude, Cursor or Windsurf, and a moment later you have a link that just works. No router settings, no firewall, no waiting.</p>
+        <a class="product-link" href="https://tapinto.dev">Visit tapinto.dev<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></a>
+
+        <div class="chat">
+          <div class="chat-user">Can you share my server on localhost:8080 so Sanne can try it?</div>
+          <div class="chat-reply">
+            <span class="chat-tool">
+              <img src="/tapinto-logo.png" alt="" width="16" height="16" loading="lazy">
+              Tapinto · opened a tunnel
+            </span>
+            <div class="chat-bot">Done. It's live at <span>amber-fern-3a8.tapinto.dev</span>. I checked it for you: all 14 tools respond. Send Sanne the link.</div>
+          </div>
+        </div>
+        <p class="product-note">Free for the first 60 minutes every week.</p>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="ai" aria-labelledby="ai-title">
+      <div class="wrap">
+        <div class="ai-head">
+          <p class="eyebrow">AI for your business</p>
+          <h2 id="ai-title" class="h-ai">Everyone's talking about AI. <span>We make it work for you.</span></h2>
+          <p class="lead">You hear about it everywhere. But where does it actually help in your business, and where do you even start? We find the places where AI gives you time back, build it into the way you already work, and make sure your team is comfortable using it. Whether you work on your own or with hundreds of people.</p>
+          <a class="btn btn--solid" href="#contact">
+            Talk to us about AI
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <p class="kicker">What it could look like for you</p>
+        <div class="cards">
+          <div>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#08707a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+            <h3>The inbox, sorted before your first coffee.</h3>
+            <p>Routine questions answered in your tone, the rest neatly sorted, so the morning starts with what actually needs you.</p>
+          </div>
+          <div>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#08707a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path><path d="M8.5 11h.01"></path><path d="M12 11h.01"></path><path d="M15.5 11h.01"></path></svg>
+            <h3>Answers at 11 at night, in your own words.</h3>
+            <p>Customers get help the moment they need it, from an assistant that knows your products and your way of doing things.</p>
+          </div>
+          <div>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#08707a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><circle cx="11.5" cy="14.5" r="2.5"></circle><path d="m13.5 16.5 2 2"></path></svg>
+            <h3>Your own documents, finally answering back.</h3>
+            <p>Ask a question and get the answer from your manuals, contracts and notes, instead of searching for half an hour.</p>
+          </div>
+        </div>
+
+        <div class="panel on-dark">
+          <h3>How we get you there.</h3>
+          <div class="panel-steps">
+            <div>
+              <p class="t">Find where it helps.</p>
+              <p class="d">We look at your day-to-day and find the work AI can genuinely take off your plate. It's often not where you'd expect. And sometimes the honest answer is: not yet.</p>
+            </div>
+            <div>
+              <p class="t">Build it in, safely.</p>
+              <p class="d">Connected to the tools you already use. Your data stays yours, and the costs are predictable before you commit.</p>
+            </div>
+            <div>
+              <p class="t">Make it stick.</p>
+              <p class="d">We help your team actually use it, so it becomes part of how you work instead of a demo that's forgotten next month.</p>
+            </div>
+          </div>
+          <p class="panel-proof">We build AI into our own products every day. Stickio lets Claude, ChatGPT and Siri help run your week, and Tapinto lets AI assistants share what they've built. That experience goes straight into your project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work -->
+    <section id="approach" class="approach" aria-labelledby="ap-title">
+      <div class="wrap">
+        <div class="approach-head">
+          <h2 id="ap-title" class="h-approach">We start at the finish line.</h2>
+          <p class="lead">Most projects start with a solution: an app, a platform, a bit of AI. We start with one question. What do you want to be different? Then we work backwards. Tools and frameworks are the result of the goal, never the reason for it.</p>
+        </div>
+
+        <p class="kicker">Working backwards, in practice</p>
+        <ol class="flow">
+          <li>
+            <span class="label">You say</span>
+            <span class="quote">“We need an app.”</span>
+          </li>
+          <li>
+            <span class="label">We ask</span>
+            <span class="quote">“What should be different once you have it?”</span>
+          </li>
+          <li class="goal">
+            <span class="label">The real goal</span>
+            <span class="quote">“Fewer customers who forget their appointment.”</span>
+          </li>
+          <li>
+            <span class="label">What we build</span>
+            <span class="answer">Whatever gets you there. Maybe an app. Maybe a friendly reminder that arrives at exactly the right moment. Either way, you'll know why.</span>
+          </li>
+        </ol>
+
+        <p class="approach-close">And when the answer is software, we take it all the way: designed with the people who'll use it, built to last, and looked after long after launch.</p>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact on-dark" aria-labelledby="impact-title">
+      <div class="wrap">
+        <div class="impact-id">
+          <img src="/hoofdpijndossier.jpg" alt="" width="64" height="64" loading="lazy">
+          <span class="txt">
+            <span class="nm">Hoofdpijndossier</span>
+            <span class="sm">Charity platform</span>
+          </span>
+        </div>
+        <div class="impact-body">
+          <h2 id="impact-title" class="h-section"><span>More than €100,000</span> raised for one child's surgery abroad.</h2>
+          <p>Hoofdpijndossier was set up to help children with chronic headaches and rare conditions. It brought people together around one child who needed life-changing treatment abroad.</p>
+          <p>Not every project we're proud of is a product. This one is a reminder that software is only worth what it changes for the people on the other side of the screen.</p>
+          <a class="impact-link" href="https://www.hoofdpijn-dossier.nl">hoofdpijn-dossier.nl<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section id="about" class="wrap founder" aria-labelledby="founder-title">
+      <div class="portrait-col">
+        <div class="portrait">
+          <img src="/profile.jpeg" alt="Mark Foppen, founder of Cre8-it" width="400" height="400" loading="lazy" decoding="async">
+          <div class="pixels" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="founder-body">
+        <h2 id="founder-title" class="h-section">Started by someone who asks why before how.</h2>
+        <p class="founder-role"><span>Mark Foppen</span> · Founder</p>
+        <p class="prose">Years of building software, for large organisations and for products of his own making, taught Mark one thing above all: technology is never the point. What matters is what changes for the people who use it.</p>
+        <p class="prose">So every project starts with listening. Where do you want to be? What would make the day easier for your team, or your customers? Mark is just as happy to point out a simpler route, or no new software at all, when that gets you there sooner.</p>
+        <div class="link-row">
+          <a class="text-link text-link--arrow" href="/about/">Read the full story
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg>
+          </a>
+          <a class="text-link" href="https://www.linkedin.com/in/markfoppen">LinkedIn<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+          <a class="text-link" href="https://www.re-mark-able.net">Blog<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="h-section">Tell us where you want to end up.</h2>
+        <p class="contact-lead">A few lines about your goal is enough. We'll show you how we'd get there, and we'll be honest if software isn't the answer.</p>
+        <a class="mail-big" href="mailto:info@cre8-it.nl">
+          info@cre8-it.nl
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg>
+        </a>
+        <p class="contact-alt">Prefer LinkedIn? <a href="https://www.linkedin.com/in/markfoppen">Send Mark a message</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="/assets/img/logo-mark.webp" alt="" width="40" height="40" loading="lazy">
+            <span>Cre8-it</span>
+          </div>
+          <p>Start with where you want to be. Made in the Netherlands.</p>
+        </div>
+        <div class="footer-cols">
+          <nav aria-label="Products">
+            <p>Products</p>
+            <a href="https://groomsome.app">GroomSome</a>
+            <a href="https://runbound.app">Runbound</a>
+            <a href="https://stickio.cre8-it.nl">Stickio</a>
+            <a href="https://tapinto.dev">Tapinto</a>
+          </nav>
+          <nav aria-label="Company">
+            <p>Company</p>
+            <a href="#ai">AI for your business</a>
+            <a href="#approach">How we work</a>
+            <a href="/about/">About</a>
+            <a href="https://www.re-mark-able.net">Blog</a>
+            <a href="https://www.linkedin.com/in/markfoppen">LinkedIn</a>
+          </nav>
+          <nav aria-label="Legal">
+            <p>Legal</p>
+            <a href="/privacy/">Privacy &amp; cookies</a>
+            <a href="/privacy/" data-cookie-settings>Cookie settings</a>
+            <a href="mailto:info@cre8-it.nl">info@cre8-it.nl</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p class="ids">
+          <span>Cre8-it B.V.</span>
+          <span>KvK 42147119</span>
+          <span>VAT NL869923651B01</span>
+          <span>Baron van Nagellstraat 136, 3771 LL Barneveld</span>
+        </p>
+        <p>© 2026 Cre8-it B.V. All rights reserved.</p>
       </div>
     </div>
-
-    <!-- Projects Section -->
-    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-      <h2 class="text-3xl font-bold text-[#0f3541] mb-12 text-center">Highlighted Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- GroomSome Project -->
-        <div class="bg-[#f3fbfc] rounded-2xl p-8 shadow-lg flex flex-col justify-between">
-          <div class="flex items-center gap-6 mb-6">
-            <img src="groomsome.svg" alt="GroomSome logo" class="w-20 h-20 rounded-xl bg-white object-contain" />
-            <h3 class="text-2xl font-semibold text-[#0f3541]">GroomSome</h3>
-          </div>
-          <p class="text-[#0f3541] mb-4">GroomSome is a modern SaaS platform designed for pet grooming businesses. It streamlines appointment scheduling, client management, and business operations, helping groomers save time and deliver a better customer experience.</p>
-          <a href="https://groomsome.app" target="_blank" rel="noopener" class="mt-4 inline-block text-[#12d5db] font-semibold hover:underline">Visit GroomSome &rarr;</a>
-        </div>
-        <!-- Hoofdpijndossier Project -->
-        <div class="bg-[#f3fbfc] rounded-2xl p-8 shadow-lg flex flex-col justify-between">
-          <div class="flex items-center gap-6 mb-6">
-            <img src="hoofdpijndossier.jpg" alt="Hoofdpijndossier logo" class="w-20 h-20 rounded-xl bg-white object-contain" />
-            <h3 class="text-2xl font-semibold text-[#0f3541]">Hoofdpijndossier</h3>
-          </div>
-          <p class="text-[#0f3541] mb-4">Hoofdpijndossier is a charity platform founded to help children with chronic headaches. The platform raised over €100,000 to help a child in need receive life-changing surgery abroad. A great achievement in social impact.</p>
-          <a href="https://www.hoofdpijn-dossier.nl" target="_blank" rel="noopener" class="mt-4 inline-block text-[#12d5db] font-semibold hover:underline">Visit Hoofdpijndossier &rarr;</a>
-        </div>
-        <!-- tapinto.dev Product -->
-        <div class="bg-[#f3fbfc] rounded-2xl p-8 shadow-lg flex flex-col justify-between">
-          <div class="flex items-center gap-6 mb-6">
-            <img src="tapinto-logo.png" alt="tapinto.dev logo" class="w-20 h-20 rounded-xl bg-white object-contain" />
-            <h3 class="text-2xl font-semibold text-[#0f3541]">tapinto.dev</h3>
-          </div>
-          <p class="text-[#0f3541] mb-4">Tapinto opens a public HTTPS URL onto your local MCP server or API in one command. MCP-aware out of the box — tools, prompts, and resources discovered automatically — with a live inspector and per-minute USD billing. The first 60 minutes every week are free.</p>
-          <a href="https://tapinto.dev" target="_blank" rel="noopener" class="mt-4 inline-block text-[#12d5db] font-semibold hover:underline">Visit tapinto.dev &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section class="mx-auto max-w-4xl px-6 py-20 lg:px-8">
-      <h2 class="text-3xl font-bold text-[#0f3541] mb-8 text-center" id="about-me">About Me</h2>
-      <div class="flex flex-col md:flex-row items-center gap-8">
-        <img src="profile.jpeg" alt="Mark Foppen, freelance full stack developer and Azure Solutions Architect" class="w-40 h-40 rounded-full object-cover shadow-md mb-6 md:mb-0" />
-        <div>
-          <h3 class="text-2xl font-semibold text-[#0f3541] mb-4">Full Stack Developer & Azure Solutions Architect</h3>
-          <p class="text-[#0f3541] text-lg mb-4">
-            Hi, I’m Mark Foppen - a freelance full stack developer and Azure Solutions Architect who enjoys building things that work well—and make sense. Over the years, I’ve worked with larger companies and launched a startup to turn ideas into working software: SaaS platforms, cloud-native systems, and recently, AI-powered apps.
-          </p>
-<h3 class="text-xl font-semibold text-[#0f3541] mb-2">Certifications & Approach</h3>
-          <p class="text-[#0f3541] text-lg mb-4">
-            I’m certified in Microsoft and GitHub certifications (including Azure Solutions Architect, GitHub Advanced Security), and I’ve always had a soft spot for building secure, scalable systems without overengineering everything. My approach is practical, I focus on shipping to production while keeping costs under control and avoiding tech debt wherever possible.
-          </p>
-<h3 class="text-xl font-semibold text-[#0f3541] mb-2">Sharing Knowledge</h3>
-          <p class="text-[#0f3541] text-lg mb-4">
-            Beyond client work, I write about tech, cloud architecture, and software development on my blog. It’s partly to keep my thoughts organized and partly to share things I’ve learned the hard way.
-          </p>
-<h3 class="text-xl font-semibold text-[#0f3541] mb-2">Let’s Connect</h3>
-          <p class="text-[#0f3541] text-lg font-semibold mt-2">
-            If you’re working on something interesting—or need a hand making your idea production-ready—I’d love to chat. Just <a href="mailto:info@cre8-it.nl" class="text-[#12d5db] underline hover:no-underline">shoot me a message</a> or <a href="https://www.linkedin.com/in/markfoppen" target="_blank" rel="noopener" class="text-[#12d5db] underline hover:no-underline">connect with me online</a>.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="mx-auto mt-20 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-32 sm:pb-24 lg:px-8">
-      <div class="flex flex-col md:flex-row justify-center gap-8 mt-10">
-        <a href="https://www.re-markable.net" target="_blank" rel="noopener" class="flex flex-col items-center bg-[#f3fbfc] rounded-2xl p-8 shadow-lg w-full md:w-1/3 hover:bg-[#e0f7fa] transition">
-          <i class="fas fa-blog text-3xl text-[#12d5db] mb-4"></i>
-          <span class="text-lg font-semibold text-[#0f3541] mb-2">Blog</span>
-          <span class="text-sm text-[#0f3541]">Read insights, stories, and updates on technology and business.</span>
-        </a>
-        <a href="https://www.linkedin.com/in/markfoppen" target="_blank" rel="noopener" class="flex flex-col items-center bg-[#f3fbfc] rounded-2xl p-8 shadow-lg w-full md:w-1/3 hover:bg-[#e0f7fa] transition">
-          <i class="fab fa-linkedin text-3xl text-[#12d5db] mb-4"></i>
-          <span class="text-lg font-semibold text-[#0f3541] mb-2">LinkedIn</span>
-          <span class="text-sm text-[#0f3541]">Connect with me for professional updates and networking.</span>
-        </a>
-      </div>
-      <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2025 Cre8-it, All rights reserved.</p>
-    </footer>
-  </div>
-  <script src="/languageSelector.js"></script>
+  </footer>
 </body>
 </html>

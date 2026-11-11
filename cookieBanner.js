@@ -53,7 +53,7 @@
       "border-radius:1rem",
       "box-shadow:0 10px 30px rgba(0,0,0,0.25)",
       "padding:1.25rem 1.5rem",
-      "font-family:'Open Sans',system-ui,sans-serif",
+      "font-family:Inter,system-ui,sans-serif",
       "font-size:0.95rem",
       "line-height:1.45"
     ].join(";");
@@ -100,9 +100,24 @@
     return wrap;
   }
 
+  function show() {
+    if (document.getElementById("cookie-banner")) return null;
+    var banner = buildBanner();
+    document.body.appendChild(banner);
+    return banner;
+  }
+
   function init() {
-    if (alreadyDecided()) return;
-    document.body.appendChild(buildBanner());
+    // "Cookie settings" links (footer) reopen the banner so a choice can be changed.
+    document.addEventListener("click", function (event) {
+      var link = event.target && event.target.closest ? event.target.closest("[data-cookie-settings]") : null;
+      if (!link) return;
+      event.preventDefault();
+      var banner = show() || document.getElementById("cookie-banner");
+      banner.tabIndex = -1;
+      banner.focus();
+    });
+    if (!alreadyDecided()) show();
   }
 
   if (document.readyState === "loading") {
