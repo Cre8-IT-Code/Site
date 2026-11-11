@@ -65,6 +65,7 @@ a:hover { color: var(--ink); }
 .h-hero span, .h-product span, .h-ai span, .h-about span { display: block; color: var(--tone, var(--grey)); }
 .lead { margin: 0; font-size: clamp(18px, 1.6vw, 21px); color: var(--text); }
 .eyebrow { margin: 0; font-weight: 600; font-size: 17px; color: var(--link); }
+.eyebrow + h2 { margin-top: 20px; }
 
 /* ---------- Buttons and links ---------- */
 .btn {
@@ -115,23 +116,7 @@ a:hover { color: var(--ink); }
 
 /* ---------- Hero ---------- */
 .hero { padding-top: clamp(48px, 8vw, 120px); padding-bottom: clamp(64px, 8vw, 120px); }
-.hero-row {
-  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
-  gap: 40px; margin-top: clamp(32px, 4vw, 56px);
-}
-.hero-copy { flex: 1 1 520px; min-width: 0; max-width: 620px; }
-.founder-chip {
-  flex: 0 1 340px; display: flex; align-items: center; gap: 16px;
-  padding: 14px 20px 14px 14px; border-radius: 999px;
-  background: #fff; border: 1px solid var(--line-mid);
-  text-decoration: none; color: var(--ink);
-}
-.founder-chip:hover { border-color: var(--ink); }
-.founder-chip img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none; }
-.founder-chip .txt { display: flex; flex-direction: column; line-height: 1.35; }
-.founder-chip .sm { font-size: 13px; color: var(--muted); }
-.founder-chip .nm { font-weight: 600; font-size: 16px; }
-.founder-chip svg { margin-left: auto; flex: none; }
+.hero-copy { max-width: 620px; margin-top: clamp(32px, 4vw, 56px); }
 
 /* ---------- Products ---------- */
 .products-intro { border-top: 1px solid var(--line); }
@@ -259,7 +244,7 @@ a:hover { color: var(--ink); }
 .panel-proof { margin: clamp(32px, 4vw, 48px) 0 0; padding-top: 24px; border-top: 1px solid #2a5260; font-size: 17px; color: #c9d6da; }
 
 /* ---------- Approach ---------- */
-.approach { background: #fff; border-bottom: 1px solid var(--line-soft); }
+.approach { background: #fff; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
 .approach > .wrap { padding-top: clamp(72px, 9vw, 128px); padding-bottom: clamp(72px, 9vw, 128px); }
 .approach-head { max-width: 860px; }
 .approach-head .lead { margin-top: 28px; }
@@ -297,25 +282,15 @@ a:hover { color: var(--ink); }
 }
 .impact-link:hover { color: var(--accent); }
 
-/* ---------- Founder ---------- */
-.founder {
+/* ---------- Who we are ---------- */
+.company {
   padding-top: clamp(64px, 8vw, 112px); padding-bottom: clamp(64px, 8vw, 112px);
-  display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px;
+  display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 72px;
 }
-.portrait-col { flex: 0 1 380px; min-width: 0; }
-.portrait { position: relative; }
-.portrait img { width: 100%; max-width: 380px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; display: block; }
-.pixels { position: absolute; right: -12px; top: -16px; width: 52px; height: 48px; }
-.pixels span { position: absolute; background: var(--orange); }
-.pixels span:nth-child(1) { left: 26px; top: 0; width: 12px; height: 12px; }
-.pixels span:nth-child(2) { left: 0; top: 14px; width: 18px; height: 18px; }
-.pixels span:nth-child(3) { left: 40px; top: 16px; width: 10px; height: 10px; }
-.pixels span:nth-child(4) { left: 20px; top: 32px; width: 16px; height: 16px; }
-.founder-body { flex: 1 1 520px; min-width: 0; }
-.founder-role { margin: 20px 0 0; font-size: 16px; font-weight: 500; color: var(--muted); }
-.founder-role span { color: var(--ink); font-weight: 600; }
-.founder-body .prose { margin: 28px 0 0; font-size: 18px; color: var(--text-strong); }
-.founder-body .prose + .prose { margin-top: 18px; }
+.company-head { flex: 1 1 380px; min-width: 0; }
+.company-body { flex: 1.3 1 520px; min-width: 0; }
+.company-body .prose { margin: 0; font-size: 18px; color: var(--text-strong); }
+.company-body .prose + .prose { margin-top: 18px; }
 
 /* ---------- Contact ---------- */
 .contact { border-top: 1px solid var(--line); }
@@ -365,12 +340,10 @@ a:hover { color: var(--ink); }
   padding-top: clamp(64px, 8vw, 112px); padding-bottom: clamp(64px, 8vw, 112px);
   display: flex; flex-wrap: wrap; align-items: flex-start; gap: 48px 72px;
 }
-.story .nm { margin: 20px 0 0; font-family: var(--display); font-weight: 600; font-size: 20px; }
-.story .role { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
-.story .link-row { gap: 4px 24px; margin-top: 8px; }
+.story-head { flex: 0 1 380px; min-width: 0; }
 .story-body { flex: 1 1 520px; min-width: 0; max-width: 680px; }
 .story-body p { margin: 20px 0 0; font-size: 19px; color: var(--text-strong); }
-.story-body h2 + p { margin-top: 28px; }
+.story-body p:first-child { margin-top: 0; }
 .strengths { padding-top: clamp(64px, 8vw, 112px); padding-bottom: clamp(64px, 8vw, 112px); }
 .strengths-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px; }
 .strengths-head h2 { flex: 1 1 520px; }
