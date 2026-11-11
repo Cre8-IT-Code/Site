@@ -38,6 +38,8 @@
       capture_pageleave: true,
       // Core Web Vitals → PostHog Web Vitals dashboard (project flag also on).
       capture_performance: { web_vitals: true },
+      // Uncaught errors → PostHog error tracking ($exception). Replaces Sentry.
+      capture_exceptions: true,
       respect_dnt: true,
       // Replay stays off — Microsoft Clarity owns session replay here.
       disable_session_recording: true,
